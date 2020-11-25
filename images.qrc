@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources/Breakfast.png</file>
+        <file>Resources/Dinner.png</file>
+        <file>Resources/Lunch.png</file>
+    </qresource>
+</RCC>
