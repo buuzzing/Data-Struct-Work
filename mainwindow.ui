@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>889</width>
-    <height>657</height>
+    <width>823</width>
+    <height>640</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -22,168 +22,1053 @@
     <height>55000</height>
    </size>
   </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
   <property name="windowTitle">
-   <string>订餐预约系统</string>
+   <string/>
   </property>
   <property name="windowOpacity">
    <double>0.990000000000000</double>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>50</y>
-      <width>201</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Consolas</family>
-      <pointsize>18</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Nothing!</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QGroupBox" name="groupBox">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>551</width>
+      <x>19</x>
+      <y>19</y>
+      <width>591</width>
       <height>581</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>微软雅黑</family>
-      <pointsize>15</pointsize>
-      <weight>9</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
+    <property name="mouseTracking">
+     <bool>true</bool>
     </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(170, 85, 255);
-font: 75 15pt &quot;微软雅黑&quot;;</string>
+    <property name="currentIndex">
+     <number>1</number>
     </property>
-    <property name="title">
-     <string>请选择您要预约的餐品</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <widget class="QPushButton" name="pushButton_Lunch">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>210</y>
-       <width>511</width>
-       <height>169</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>511</width>
-       <height>169</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>511</width>
-       <height>169</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset resource="images.qrc">
-       <normaloff>:/Resources/Lunch.png</normaloff>:/Resources/Lunch.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>511</width>
-       <height>169</height>
-      </size>
-     </property>
+    <widget class="QWidget" name="page_Menu">
+     <widget class="QGroupBox" name="groupBox_Menu">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>551</width>
+        <height>561</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="title">
+       <string>请选择您要预约的餐品</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QPushButton" name="pushButton_Lunch">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>210</y>
+         <width>511</width>
+         <height>169</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>511</width>
+         <height>169</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>511</width>
+         <height>169</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="images.qrc">
+         <normaloff>:/Resources/Lunch.png</normaloff>:/Resources/Lunch.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>511</width>
+         <height>169</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Dinner">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>380</y>
+         <width>511</width>
+         <height>169</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>511</width>
+         <height>169</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>511</width>
+         <height>169</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="images.qrc">
+         <normaloff>:/Resources/Dinner.png</normaloff>:/Resources/Dinner.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>511</width>
+         <height>169</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Breakfast">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>511</width>
+         <height>169</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>511</width>
+         <height>169</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>511</width>
+         <height>169</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="images.qrc">
+         <normaloff>:/Resources/Breakfast.png</normaloff>:/Resources/Breakfast.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>511</width>
+         <height>169</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
     </widget>
-    <widget class="QPushButton" name="pushButton_Dinner">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>380</y>
-       <width>511</width>
-       <height>169</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>511</width>
-       <height>169</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>511</width>
-       <height>169</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset resource="images.qrc">
-       <normaloff>:/Resources/Dinner.png</normaloff>:/Resources/Dinner.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>511</width>
-       <height>169</height>
-      </size>
-     </property>
+    <widget class="QWidget" name="page_Breakfast">
+     <widget class="QGroupBox" name="groupBox_Breakfast">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>551</width>
+        <height>561</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="title">
+       <string>早餐</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QTabWidget" name="tabWidget_Breakfast">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>521</width>
+         <height>501</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="BT1">
+        <attribute name="title">
+         <string>中式早餐</string>
+        </attribute>
+        <widget class="QScrollArea" name="scrollArea_BT1">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>510</width>
+           <height>451</height>
+          </rect>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>491</width>
+            <height>800</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>470</width>
+            <height>800</height>
+           </size>
+          </property>
+          <widget class="QCheckBox" name="BT1_F1">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>10</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>馒头</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="BT1_F2">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>120</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>鸡蛋</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="BT1_F3">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>230</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>肉包子</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="BT1_F4">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>340</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>手抓饼</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="BT1_F5">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>450</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>年糕</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="BT1_F6">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>560</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>番茄鸡蛋饼</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="BT1_F7">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>670</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>小笼包</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="BT1_P1">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>10</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="BT1_P2">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>120</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="BT1_P3">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>230</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="BT1_P4">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>340</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="BT1_P5">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>450</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="BT1_P6">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>560</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="BT1_P7">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>670</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="BT1_N1">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>45</y>
+             <width>80</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="suffix">
+            <string>份</string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="BT1_N2">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>155</y>
+             <width>80</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="suffix">
+            <string>份</string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="BT1_N3">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>265</y>
+             <width>80</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="suffix">
+            <string>份</string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="BT1_N4">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>375</y>
+             <width>80</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="suffix">
+            <string>份</string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="BT1_N5">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>485</y>
+             <width>80</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="suffix">
+            <string>份</string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="BT1_N6">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>595</y>
+             <width>80</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="suffix">
+            <string>份</string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="BT1_N7">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>705</y>
+             <width>80</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="suffix">
+            <string>份</string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="BT2">
+        <attribute name="title">
+         <string>粥</string>
+        </attribute>
+        <widget class="QScrollArea" name="scrollArea_BT2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>510</width>
+           <height>451</height>
+          </rect>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>508</width>
+            <height>449</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>470</width>
+            <height>240</height>
+           </size>
+          </property>
+          <widget class="QCheckBox" name="BT2_F1">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>10</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>皮蛋瘦肉粥</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="BT2_F2">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>120</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>豆浆</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="BT2_F3">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>230</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>牛奶</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="BT2_F4">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>340</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>酸奶紫薯泥</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="BT2_P1">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>10</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="BT2_P2">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>120</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="BT2_P3">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>230</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="BT2_P4">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>340</y>
+             <width>120</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="BT2_N1">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>45</y>
+             <width>80</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="suffix">
+            <string>份</string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="BT2_N2">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>155</y>
+             <width>80</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="suffix">
+            <string>份</string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="BT2_N3">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>265</y>
+             <width>80</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="suffix">
+            <string>份</string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="BT2_N4">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>375</y>
+             <width>80</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="suffix">
+            <string>份</string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="BT3">
+        <attribute name="title">
+         <string>西式早餐</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="BT4">
+        <attribute name="title">
+         <string>汤</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="BT5">
+        <attribute name="title">
+         <string>主食</string>
+        </attribute>
+       </widget>
+      </widget>
+     </widget>
     </widget>
-    <widget class="QPushButton" name="pushButton_Breakfast">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>40</y>
-       <width>511</width>
-       <height>169</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>511</width>
-       <height>169</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>511</width>
-       <height>169</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset resource="images.qrc">
-       <normaloff>:/Resources/Breakfast.png</normaloff>:/Resources/Breakfast.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>511</width>
-       <height>169</height>
-      </size>
-     </property>
+    <widget class="QWidget" name="page_Lunch">
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>160</y>
+        <width>331</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Lunch</string>
+      </property>
+     </widget>
     </widget>
+    <widget class="QWidget" name="page_Dinner">
+     <widget class="QGroupBox" name="DinnerType_1">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>9</y>
+        <width>391</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>粥</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Back">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>460</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>主菜单</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Exit">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>530</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -191,7 +1076,7 @@ font: 75 15pt &quot;微软雅黑&quot;;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>889</width>
+     <width>823</width>
      <height>23</height>
     </rect>
    </property>
@@ -201,5 +1086,22 @@ font: 75 15pt &quot;微软雅黑&quot;;</string>
  <resources>
   <include location="images.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_Exit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>941</x>
+     <y>577</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>870</x>
+     <y>595</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

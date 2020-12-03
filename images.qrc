@@ -3,5 +3,25 @@
         <file>Resources/Breakfast.png</file>
         <file>Resources/Dinner.png</file>
         <file>Resources/Lunch.png</file>
+        <file>Resources/Breakfast/馒头.png</file>
+        <file>Resources/Breakfast/豆浆.png</file>
+        <file>Resources/Breakfast/番茄鸡蛋饼.png</file>
+        <file>Resources/Breakfast/鸡蛋.png</file>
+        <file>Resources/Breakfast/金枪鱼寿司.png</file>
+        <file>Resources/Breakfast/咖喱蛋包饭.png</file>
+        <file>Resources/Breakfast/年糕.png</file>
+        <file>Resources/Breakfast/牛奶.png</file>
+        <file>Resources/Breakfast/皮蛋瘦肉粥.png</file>
+        <file>Resources/Breakfast/肉包子.png</file>
+        <file>Resources/Breakfast/三文鱼芦笋蘑菇意面.png</file>
+        <file>Resources/Breakfast/蔬菜沙拉.png</file>
+        <file>Resources/Breakfast/酸奶紫薯泥.png</file>
+        <file>Resources/Breakfast/吐司面包.png</file>
+        <file>Resources/Breakfast/香肠吐司披萨.png</file>
+        <file>Resources/Breakfast/小笼包.png</file>
+        <file>Resources/Breakfast/羊杂汤.png</file>
+        <file>Resources/Breakfast/馄饨.png</file>
+        <file>Resources/Breakfast/手抓饼.png</file>
+        <file>Resources/icon.png</file>
     </qresource>
 </RCC>
